@@ -12,7 +12,7 @@ public class AppConfiguration {
     int div;
 
     @Bean
-    public Set<Integer> getSimpleNumbers(){
+    public Set<Integer> getPrimeNumbers() {
         //Implementation of Atkin's algorithm
         int limit = Integer.MAX_VALUE / div;
         ArrayList<Boolean> sieve = new ArrayList<>(limit + 1);
@@ -51,8 +51,8 @@ public class AppConfiguration {
             }
         }
         Set<Integer> simpleNumbers = new HashSet<>();
-        for (int i =0; i< limit; i++){
-            if (sieve.get(i)){
+        for (int i = 0; i < limit; i++) {
+            if (sieve.get(i)) {
                 simpleNumbers.add(i);
             }
         }

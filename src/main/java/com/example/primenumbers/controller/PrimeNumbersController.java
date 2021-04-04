@@ -15,7 +15,7 @@ public class PrimeNumbersController {
     }
 
     @PostMapping("/prime")
-    Map<Integer,Integer> getMapDoublesSimpleNumbers(@RequestBody List<Integer> input){
+    Map<Integer, Integer> getMapDoublesSimpleNumbers(@RequestBody List<Integer> input) {
         return identifier.identifyDuplicateSimpleNumbers(input);
     }
 }
