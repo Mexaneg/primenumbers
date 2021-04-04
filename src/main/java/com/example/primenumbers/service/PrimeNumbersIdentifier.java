@@ -1,16 +1,15 @@
 package com.example.primenumbers.service;
 
 import org.springframework.stereotype.*;
-
 import java.math.*;
 import java.util.*;
 
 @Service
 public class PrimeNumbersIdentifier {
-    private final HashSet<Integer> primeNumbers;
+    private final Set<Integer> primeNumbers;
 
-    public PrimeNumbersIdentifier(HashSet<Integer> simpleNumbers) {
-        this.primeNumbers = simpleNumbers;
+    public PrimeNumbersIdentifier(Set<Integer> primeNumbers) {
+        this.primeNumbers = primeNumbers;
     }
 
     public Map<Integer, Integer> identifyDuplicateSimpleNumbers(List<Integer> input) {
